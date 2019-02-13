@@ -4,10 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECS.Legacy
+namespace NewECS.Legacy
 {
-    interface ITempSensor
+    interface IHeater
     {
+        void TurnOn();
+    
+
+        void TurnOff();
+
+
+        bool RunSelfTest(); 
 
     }
 }

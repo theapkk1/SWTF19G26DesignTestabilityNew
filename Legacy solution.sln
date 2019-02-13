@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewECS.Legacy", "NewECS.Legacy\NewECS.Legacy.csproj", "{62967DAE-4D44-46F0-AC68-5DFD35B3426B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "newECS.Test.Unit", "newECS.Test.Unit\newECS.Test.Unit.csproj", "{512E6476-97E5-4DAD-8973-58DCA4E0EF89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{62967DAE-4D44-46F0-AC68-5DFD35B3426B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62967DAE-4D44-46F0-AC68-5DFD35B3426B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62967DAE-4D44-46F0-AC68-5DFD35B3426B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{512E6476-97E5-4DAD-8973-58DCA4E0EF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512E6476-97E5-4DAD-8973-58DCA4E0EF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512E6476-97E5-4DAD-8973-58DCA4E0EF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512E6476-97E5-4DAD-8973-58DCA4E0EF89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

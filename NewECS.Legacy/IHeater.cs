@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NewECS.Legacy
 {
-    interface IHeater
+    public interface IHeater
     {
         void TurnOn();
     

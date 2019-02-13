@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NewECS.Legacy
 {
-    interface ITempSensor
+    public interface ITempSensor
     {
         int GetTemp();
 

@@ -19,9 +19,9 @@ namespace newECS.Test.Unit
         [SetUp]
         public void SetUp()
         {
-            _uut = new ECS(20);
             _fakeTempSensor = new FakeTempSensor();
             _fakeHeater = new FakeHeater();
+            _uut = new ECS(_fakeTempSensor, _fakeHeater, 20);
         }
 
         [Test]
@@ -29,7 +29,7 @@ namespace newECS.Test.Unit
         {
             _fakeTempSensor.Temp = 50; // Act
 
-            _uut.Regulate();
+            _uut.GetCurTemp();
             Assert.That(_uut.GetCurTemp(), Is.EqualTo(50));
         }
     }

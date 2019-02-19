@@ -3,14 +3,30 @@
     public class ECS
     {
         private int _threshold;
-        private readonly TempSensor _tempSensor;
-        private readonly Heater _heater;
+        
+        private readonly ITempSensor _tempSensor;
+        private readonly IHeater _heater;
 
-        public ECS(int thr)
+
+        //public ECS(int thr)
+        //{
+        //    SetThreshold(thr);
+        //    _tempSensor = new TempSensor();
+        //    _heater = new Heater();
+        //}
+
+        // We use constructor injection for all dependencies
+        public ECS(ITempSensor tempSensor, IHeater heater, int threshold)
         {
-            SetThreshold(thr);
-            _tempSensor = new TempSensor();
-            _heater = new Heater();
+            // Save references to dependencies
+            _tempSensor = tempSensor;
+            _heater = heater;
+           
+
+            // Initialize properties
+            //UpperTemperatureThreshold = upperTemperatureThreshold;
+            //LowerTemperatureThreshold = lowerTemperatureThreshold;
+
         }
 
         public void Regulate()
@@ -20,7 +36,6 @@
                 _heater.TurnOn();
             else
                 _heater.TurnOff();
-
         }
 
         public void SetThreshold(int thr)

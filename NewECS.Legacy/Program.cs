@@ -10,7 +10,10 @@ namespace NewECS.Legacy
     {
         public static void Main(string[] args)
         {
-            var ecs = new ECS(28);
+            IHeater heater = new Heater();
+            ITempSensor tempSensor = new TempSensor();
+            
+            var ecs = new ECS(tempSensor,heater, 20);
 
             ecs.Regulate();
 

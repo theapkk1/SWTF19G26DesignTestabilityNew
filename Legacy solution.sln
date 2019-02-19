@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewECS.Legacy", "NewECS.Leg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "newECS.Test.Unit", "newECS.Test.Unit\newECS.Test.Unit.csproj", "{512E6476-97E5-4DAD-8973-58DCA4E0EF89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Unit.NSubstitute", "Test.Unit.NSubstitute\Test.Unit.NSubstitute.csproj", "{D35DE138-66BF-44E5-B9EB-BFC0982F38EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{512E6476-97E5-4DAD-8973-58DCA4E0EF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{512E6476-97E5-4DAD-8973-58DCA4E0EF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{512E6476-97E5-4DAD-8973-58DCA4E0EF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35DE138-66BF-44E5-B9EB-BFC0982F38EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35DE138-66BF-44E5-B9EB-BFC0982F38EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35DE138-66BF-44E5-B9EB-BFC0982F38EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35DE138-66BF-44E5-B9EB-BFC0982F38EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

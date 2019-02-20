@@ -13,7 +13,7 @@ namespace NewECS.Legacy
             IHeater heater = new Heater();
             ITempSensor tempSensor = new TempSensor();
             
-            var ecs = new ECS(tempSensor,heater, 20);
+            var ecs = new ECS(tempSensor,heater);
 
             ecs.Regulate();
 

@@ -6,6 +6,7 @@
         
         private readonly ITempSensor _tempSensor;
         private readonly IHeater _heater;
+        
 
 
         //public ECS(int thr)
@@ -16,12 +17,13 @@
         //}
 
         // We use constructor injection for all dependencies
-        public ECS(ITempSensor tempSensor, IHeater heater, int threshold)
+        public ECS(ITempSensor tempSensor, IHeater heater)
         {
             // Save references to dependencies
             _tempSensor = tempSensor;
             _heater = heater;
-           
+            
+
 
             // Initialize properties
             //UpperTemperatureThreshold = upperTemperatureThreshold;
